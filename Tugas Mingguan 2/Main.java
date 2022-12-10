@@ -21,7 +21,20 @@ public class Main {
         System.out.println("Alamat = ");
         pnyw.alamat = Penyewa.nextLine();
 
-        //Output petugas dan penyewa
+        //Opsi 1 mobil suv
+        mobil cek = new mobil();
+        Scanner mobil = new Scanner(System.in);
+        System.out.println("Pilihlah jenis mobil yang akan anda sewa = ");
+        cek.jenis_mobil();
+        System.out.println("Nama Mobil = ");
+        cek.nama_mobil= mobil.nextLine();
+        System.out.print("Masukkan harga sewa mobil : ");
+        //output harga
+        cek.harga= (int) mobil.nextDouble();
+        System.out.println("Masukkan lama hari : ");
+        cek.lama_sewa= (int) mobil.nextDouble();
+
+        //Output
         System.out.println("----DATA PETUGAS DAN PENYEWA----");
         System.out.println("Nama Petugas = " +ptgs.getNama_petugas());
         System.out.println("No.Hp : " +ptgs.getNo_hp());
@@ -29,24 +42,10 @@ public class Main {
         System.out.println("Nama Penyewa = " +pnyw.getNama_penyewa());
         System.out.println("No Hp = " +pnyw.getNo_hp());
         System.out.println("Alamat = " +pnyw.getAlamat());
-
-        sewa sw = new sewa("1,2");
-        Scanner sewa = new Scanner(System.in);
-
-        //Opsi 1 mobil suv
-        sewa cek = new mobil_suv("1");
-        mobil_suv sv = new mobil_suv("1");
-        Scanner mobil_suv = new Scanner(System.in);
-        System.out.println("Pilihlah Jenis Mobil SUV Yang Akan Anda Sewa = ");
-        System.out.println("Jenis suv yang dipilih = "+cek.getKd_sewa());
-        cek.jenis_mobil1();
-
-        //opsi 2 mobil mpv
-        sewa tes = new mobil_mpv("2");
-        mobil_mpv mv = new mobil_mpv("2");
-        Scanner mobil_mpv = new Scanner(System.in);
-        System.out.println("Pilihlah Jenis Mobil MPV Yang Akan Anda Sewa = ");
-        System.out.println("Jenis mobil mpv yang dipilih =  "+tes.getKd_sewa());
-        tes.jenis_mobil2();
+        //output harga
+        System.out.println("--------------------");
+        System.out.println("Harga sewa : " + cek.getHarga());
+        System.out.println("Lama sewa : "+ cek.getLama_sewa());
+        System.out.println("Keseluruhan biaya : "+ cek.getkeseluruhan());
     }
 }
