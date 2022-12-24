@@ -1,0 +1,22 @@
+                      NOTA SEWA MOBIL                  
+Data Petugas--
+Nama Petugas            = a
+No Telp Petugas         = 1
+
+--------
+Data Penyewa--
+Nama Penyewa            = b
+Nama Telepon            = 2
+Nama Alamat             = s
+
+--------
+Data Unit & Rincian Harga--
+Unit Yang Akan Disewa   = [Innova, Alphard, Camry, Pajero Sport, Fortuner, Avanza]
+Harga Sewa Unit Per-Hari= [500000, 1000000, 1000000, 800000, 800000, 300000]
+Jumlah Hari Sewa        = [1, 2, 1, 2, 3, 1]
+Rincian Total           = [500000.0, 2000000.0, 1000000.0, 1600000.0, 2400000.0, 300000.0]
+Keseluruhan Biaya       = 7800000.0
+
+--------
+Simpan Bukti Sewa
+Terima Kasih Telah Mempercayakan Kami Sebagai Pilihan Anda

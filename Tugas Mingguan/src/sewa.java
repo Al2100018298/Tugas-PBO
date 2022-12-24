@@ -1,3 +1,4 @@
+
 public abstract class sewa implements transaksi{
     @Override
     public void jenis_mobil(){
@@ -22,4 +23,7 @@ public abstract class sewa implements transaksi{
         System.out.println("Harga Sewa Perhari : Rp. 800.0000");
         System.out.println("===================================");
     }
+
+
+    abstract void getkeseluruhan();
 }
